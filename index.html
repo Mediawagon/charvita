@@ -10,7 +10,10 @@
       <link href="css/bootstrap.min.css" rel="stylesheet" />
       <link href="css/font-awesome.min.css" rel="stylesheet" />
       <link href="css/custom.css" rel="stylesheet" />
+	  <link rel="icon" href="images/favicon.png" type="image/png">
 	  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	  <link href="magiczoomplus/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen"/>
+     <script src="magiczoomplus/magiczoomplus.js" type="text/javascript"></script>
    </head>
    <body>
       <div id="myNav" class="overlay">
@@ -48,18 +51,18 @@
             DOWNLOAD E-BROCHURE
             </button>
             <ul class="social-links">
-               <li>
-                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-               </li>
-               <li>
-                  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-               </li>
+			<li>
+                <a href="https://www.facebook.com/Charvitha-Meadows-100224695496681 "><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com/charvitha_meadows/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                 
+                  <li>
+                     <a href="https://www.linkedin.com/company/72322744/admin/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					  <li>
+                     <a href="https://www.youtube.com/channel/UC9ONoXygGi_fwugFZANVKTw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                  </li>
             </ul>
          </div>
       </div>
@@ -82,9 +85,13 @@
          </svg>
       </span>
       <section id="home" class="home-section">
-         <img src="images/logo.png" alt="logo" class="logo" />
-         <h1 class="animate__animated animate__backInDown"> The Kohinoor of Siddipet <br />Charvitha Meadows</h1>
-		 
+         <img src="images/logo.png" alt="logo" class="logo" /> 
+         <div class="bg-video-wrap d-none d-sm-block">
+            <video width="100%" poster="images/charvithaposter.jpg"  src="video/charvitha.mp4" loop muted autoplay >            </video> 
+           
+          </div>
+		  <h1 class="animate__animated animate__backInDown"> The Kohinoor of Siddipet <br />Charvitha Meadows</h1>
+         
       </section>
       <section id="project" class="about-section">
          <div class="about-content">
@@ -105,8 +112,9 @@
 			<h6>100% VAASTU COMPLIANT</h6>
 
          </div>
-         <div class="master-banner">
-            <img src="images/master-banner.jpg" />
+		
+         <div class="master-banner img-magnifier-container">
+           <img src="images/master-banner.jpg"  id="myimage"/>
          </div>
       </section>
       <section id="features" class="features-section">
@@ -164,11 +172,7 @@
                   class="carousel slide"
                   data-ride="carousel"
                   >
-                 <ol class="carousel-indicators">
-                     <li data-target="#carouselControls" data-slide-to="0" class="active" ></li>
-                     <li data-target="#carouselControls" data-slide-to="1"></li>
-					  
-                  </ol>
+                 
                   <div class="carousel-inner">
                      <div class="carousel-item active">
                         <div class="slider-div">
@@ -189,75 +193,9 @@
                            </div>
                         </div>
                      </div>
-					 <div class="carousel-item">
-                        <div class="slider-div">
-                           <img
-                              class="d-block w-100"
-                              src="images/features/charvithavruksha/futuristic-street-lightning.jpg"
-                              />
-                           <div class="carousel-caption features-caption">
-                              <div class="slider-caption">
-                                 <h3>The Wonder Tree The First of Its kind of in india</h3>
-                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore
-                                    magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                    non proident, sunt in culpa qui officia deserunt mollit
-                                    anim id est laborum. Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+					 
                   </div>
-				   <a
-                  class="carousel-control-prev"
-                  href="#carouselControls1"
-                  role="button"
-                  data-slide="prev"
-                  >
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     width="92"
-                     height="92"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="1"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     class="feather feather-chevron-left"
-                     >
-                     <polyline points="15 18 9 12 15 6"></polyline>
-                  </svg>
-               </a>
-               <a
-                  class="carousel-control-next"
-                  href="#carouselControls1"
-                  role="button"
-                  data-slide="next"
-                  >
-				  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     width="92"
-                     height="92"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="1"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     class="feather feather-chevron-right"
-                     >
-                     <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-               </a>
+				   
                </div>
             </div>
             <div  class="tab-pane fade" id="sanjeevani"  role="tabpanel"  aria-labelledby="profile-tab">
@@ -295,19 +233,48 @@
                         <div class="carousel-caption features-caption">
                            <div class="slider-caption">
                               <h3>The Wonder Tree The First of Its kind of in india</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                 sed do eiusmod tempor incididunt ut labore et dolore magna
-                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                 Duis aute irure dolor in reprehenderit in voluptate velit
-                                 esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                 sint occaecat cupidatat non proident, sunt in culpa qui
-                                 officia deserunt mollit anim id est laborum. Lorem ipsum
-                                 dolor sit amet, consectetur adipiscing elit, sed do
-                                 eiusmod tempor incididunt ut labore et dolore magna
-                                 aliqua.
-                              </p>
+                              <ul>
+                                <li>Children’s play area with recreational space</li>
+								<li>Walking Pathways</li>
+								<li>Well-groomed pond area</li>
+								<li>Reflexology pathway, and seating beside the water pond for the elders</li>
+								</ul>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="carousel-item">
+                        <img
+                           class="d-block w-100"
+                           src="images/features/sanjeevini/electric-car-charging-station.jpg"
+                           />
+                        <div class="carousel-caption features-caption">
+                           <div class="slider-caption">
+                             
+                              <ul>
+                                <li>Electric car charging station</li>
+								<li>Theme play areas</li>
+								<li>Gathering spaces</li>
+								<li>Open fence around the park</li>
+								
+								</ul>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="carousel-item">
+                        <img
+                           class="d-block w-100"
+                           src="images/features/sanjeevini/bonfire.jpg"
+                           />
+                        <div class="carousel-caption features-caption">
+                           <div class="slider-caption">
+                             
+                              <ul>
+                                <li>A bonfire place to chill with friends</li>
+								<li>Amphitheatre</li>
+                                 <li>Aromatic herbs for aroma &amp; visual therapy</li>
+									<li>A segment of herbal &amp; spice gardens</li>
+									<li>Pergolas &amp; gathering spaces</li>
+								</ul>
                            </div>
                         </div>
                      </div>
@@ -399,19 +366,9 @@
                            />
                         <div class="carousel-caption features-caption">
                            <div class="slider-caption">
-                              <h3>The Wonder Tree The First of Its kind of in india</h3>
+                             
                               <p>
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                 sed do eiusmod tempor incididunt ut labore et dolore magna
-                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                 Duis aute irure dolor in reprehenderit in voluptate velit
-                                 esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                 sint occaecat cupidatat non proident, sunt in culpa qui
-                                 officia deserunt mollit anim id est laborum. Lorem ipsum
-                                 dolor sit amet, consectetur adipiscing elit, sed do
-                                 eiusmod tempor incididunt ut labore et dolore magna
-                                 aliqua.
+                                 Pet park
                               </p>
                            </div>
                         </div>
@@ -423,20 +380,22 @@
                            />
                         <div class="carousel-caption features-caption">
                            <div class="slider-caption">
-                              <h3>The Wonder Tree The First of Its kind of in india</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                 sed do eiusmod tempor incididunt ut labore et dolore magna
-                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                 Duis aute irure dolor in reprehenderit in voluptate velit
-                                 esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                 sint occaecat cupidatat non proident, sunt in culpa qui
-                                 officia deserunt mollit anim id est laborum. Lorem ipsum
-                                 dolor sit amet, consectetur adipiscing elit, sed do
-                                 eiusmod tempor incididunt ut labore et dolore magna
-                                 aliqua.
-                              </p>
+                            
+                              <ul><li>Tennis court</li><li>Cricket practice nets </li></ul>
+                                
+                           </div>
+                        </div>
+                     </div>
+					 <div class="carousel-item">
+                        <img
+                           class="d-block w-100"
+                           src="images/features/pravaahavihar/basketball-court.jpg"
+                           />
+                        <div class="carousel-caption features-caption">
+                           <div class="slider-caption">
+                             
+                              <ul><li>Basketball court</li><li>Volleyball court  </li></ul>
+                                
                            </div>
                         </div>
                      </div>
@@ -691,6 +650,7 @@
 	  <section>
 	   <button class="btn btn-success btn-block brochure-btn"><i class="fa fa-angle-double-down" aria-hidden="true"></i> DOWNLOAD E-BROCHURE</button>
 	  </section>
+ 
       <footer>
          <div class="row" style="margin: 0px">
             <div class="col-md-3 projet-consultants">
@@ -754,16 +714,17 @@
                </div>
                <ul class="social-links">
                   <li>
-                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     <a href="https://www.facebook.com/Charvitha-Meadows-100224695496681 "><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.instagram.com/charvitha_meadows/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </li>
+                  
                   <li>
-                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     <a href="https://www.linkedin.com/company/72322744/admin/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                   </li>
-                  <li>
-                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				  <li>
+                     <a href="https://www.youtube.com/channel/UC9ONoXygGi_fwugFZANVKTw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                   </li>
                </ul>
             </div>
@@ -788,18 +749,66 @@
             <a href="#">Privacy Policy</a>
          </div>
       </footer>
+
+     <div id="enquiry"> Enquire Now </div>
+  
+     <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title w-100 text-center">Enquire Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <form class="enquiry-form">
+                  <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Name" />
+                  </div>
+                  <div class="form-group">
+                     <input  type="text"  class="form-control" placeholder="Phone No."/>
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Email" />
+                  </div>
+                  <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Company">
+                     </div>
+                  <div class="form-group">
+                     <textarea row='5' class="form-control" placeholder="Your Message"></textarea>
+                  </div>
+                  <button class="btn btn-primary btn-block ">
+                  SUBMIT
+                  </button>
+               </form>
+            </div> 
+          </div>
+        </div>
+       </div>
+
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script>
          $(".menu-bars").on("click", function () {
-           $("#myNav").css("width", "100%");
+           $("#myNav").css("height", "100%");
          });
          
          $(".closeMenu, .overlay-content a").on("click", function () {
-           $("#myNav").css("width", "0%");
+           $("#myNav").css("height", "0%");
          });
+         $("#enquiry").on("click", function () {
+         $('.modal').modal('show')
+         })
       </script>
+	  <script src="js/layoutzoom.js"></script>
+	  <script>
+			/* Initiate Magnify Function
+			with the id of the image, and the strength of the magnifier glass:*/
+			magnify("myimage", 2);
+			</script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	  <script> new WOW().init(); </script>
    </body>

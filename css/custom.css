@@ -1,0 +1,794 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #67686c;
+}
+
+/* ============ Common Css ================ */
+
+.section-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.section-heading.black {
+  color: #153544;
+}
+
+.header-banner {
+  background-image: url(../images/header-bg.jpg);
+  height: 200px;
+  text-align: center;
+  color: #fff;
+  padding-top: 85px;
+}
+
+.master-banner img,
+.map-banner img {
+  width: 100%;
+}
+
+/* width */
+.features-section ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.features-section ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.features-section ::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.features-section ::-webkit-scrollbar-thumb:hover {
+  background: #ff8383;
+}
+
+.brochure-btn {
+  margin-top: 20px;
+  border-radius: 0px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+/* ============ Header Css ================= */
+
+.menu-bars {
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  position: fixed;
+  right: 18px;
+  top: 18px;
+  z-index: 9;
+  background: rgb(22 37 47 / 23%);
+  padding: 8px 8px;
+  padding-bottom: 0px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-image: url("../images/menu-bg.jpg");
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closeMenu {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closeMenu {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+}
+
+img.logo {
+  float: right;
+  margin: 100px;
+  height: 90px;
+  position: absolute;
+  z-index: 9;
+  right: 0px;
+}
+
+.header-social {
+  float: right;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+.header-social .brochure-btn {
+  float: left;
+  margin-top: 5px;
+  margin-right: 40px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.header-social .social-links {
+  overflow: hidden;
+  margin: 0px;
+}
+
+.header-social .social-links li a {
+  font-size: 20px;
+}
+
+/* ============ Home Section ================ */
+
+.home-section .bg-video-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.home-section video {
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.home-section h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  bottom: 40px;
+  left: 40%;
+  line-height: 60px;
+}
+
+/* ============ About Section ================ */
+
+.about-section {
+  background-image: url(../images/about-banner.jpg);
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.about-content {
+  background: #fff;
+  opacity: 0.75;
+  color: #000;
+  width: 43%;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* =========== Club House Section ================ */
+
+.clubhouse-section .carousel-caption {
+  background: #192730;
+  font-size: 19px;
+  position: absolute;
+  right: 0px !important;
+  left: auto;
+  bottom: 0px;
+  padding: 10px 30px;
+}
+
+.carousel-inner img {
+  height: 650px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 7%;
+}
+
+/* ============ Features Section ================ */
+
+.features-section {
+  /* padding: 30px; */
+}
+
+.features-section li.nav-item {
+  padding: 10px 15px;
+}
+
+.features-section .nav-pills .nav-link {
+  border-radius: 0.25rem;
+  color: #153544;
+  padding: 0px;
+  border-radius: 0px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.features-section .nav-pills .nav-link.active,
+.features-section .nav-pills .show > .nav-link {
+  color: #153544;
+  background-color: transparent;
+  border-bottom: 1px solid #153544;
+}
+
+.features-section .features-caption {
+  position: absolute;
+  top: 75px;
+  right: 100px;
+  left: auto;
+  bottom: auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-height: 500px;
+}
+
+.slider-caption {
+  background: #f2ecec;
+  opacity: 0.9;
+  color: #000;
+  width: 400px;
+  max-height:300px;
+  overflow-y: auto;
+  text-align: left;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.features-section h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  line-height: 27px;
+}
+
+/* ============ Address Section ===================== */
+
+.address p {
+  margin-bottom: 3px;
+}
+
+.address-form p {
+  padding: 0px 20px 10px 20px;
+}
+
+.address-form .form-control {
+  font-size: 14px;
+  border-radius: 0px;
+  height: 40px;
+}
+
+.lets-talk {
+  border-radius: 0px;
+  font-size: 17px;
+  background: transparent;
+  color: #000;
+  font-weight: bold;
+}
+
+footer {
+  /* background: #153544; */
+  background: rgb(25 39 48);
+  padding: 50px;
+  padding-bottom: 20px;
+  color: #dedede;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+footer .the-corporate {
+  text-align: center;
+}
+
+footer .the-corporate p {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+footer .links ul {
+  padding-left: 0px;
+  list-style: none;
+  line-height: 30px;
+}
+
+footer .links ul a {
+  color: #dedede;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.social-links {
+  padding-left: 0px;
+  list-style: none;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.social-links li {
+  float: left;
+}
+
+.social-links li a {
+  color: #dedede;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+footer .projet-consultants .d-flex h5 {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+footer .projet-consultants .img-div {
+  width: 75px;
+  display: inline-table;
+}
+
+.copyright p {
+  padding-right: 20px;
+}
+
+.copyright a {
+  color: #dedede;
+}
+
+#enquiry {
+  padding: 3px 9px;
+  margin: 0px;
+  position: fixed;
+  right: -51px;
+  top: 50%;
+  z-index: 1100;
+  background: #2f6393;
+  transform: rotate(-90deg);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.enquiry-form {
+  padding: 20px;
+}
+
+/* ============= Responsive Css ============= */
+
+@media (min-width: 240px) and (max-width: 360px) {
+}
+
+@media (max-width: 767px) {
+  .overlay .closeMenu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 23px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+  img.logo {
+    float: left;
+    margin: 15px 10px;
+    height: 70px;
+	position: absolute;
+    z-index: 9;
+    left: 0px;
+  }
+
+  .header-social {
+    float: none;
+    margin-top: 100px;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .header-social .brochure-btn {
+    float: none;
+    margin-top: 5px;
+    margin-right: 0px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .header-social ul.social-links {
+    width: 190px;
+    margin: 0 auto !important;
+  }
+
+  .home-section {
+    background-image: url(../images/banner.gif);
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #16252f;
+    background-position: 55px 112px;
+    position: relative;
+  }
+
+  .home-section h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    line-height: 32px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-content {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .about-section {
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 36px;
+  }
+
+  .section-heading {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    text-align: justify;
+  }
+
+  .header-banner {
+    height: 120px;
+    padding-top: 48px;
+    background-size: cover;
+  }
+
+  .features-section .features-caption {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    bottom: auto;
+    max-height: 300px;
+  }
+
+  .features-section .carousel-inner img {
+    height: 520px;
+  }
+
+  .slider-caption {
+    background: #fff;
+    opacity: 0.9;
+    color: #000;
+    width: 100%;
+    overflow-y: auto;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .clubhouse-section .header-banner {
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+  }
+
+  .clubhouse-banner .carousel-inner img {
+    height: 250px;
+  }
+
+  .address-form {
+    margin-top: 30px;
+  }
+
+  footer {
+    padding: 30px 10px;
+    padding-bottom: 0px;
+  }
+
+  .corporate-office {
+    padding-left: 15px !important;
+    padding: 20px 0px;
+    border-top: 1px solid #4a4a4a;
+  }
+
+  .the-corporate {
+    border-top: 1px solid #4a4a4a;
+    padding: 20px 15px;
+  }
+
+  .the-corporate h4 {
+    text-align: left;
+  }
+
+  .the-corporate p {
+    margin-bottom: 0px;
+  }
+
+  .links {
+    border-top: 1px solid #4a4a4a;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    padding-top: 20px;
+    border-top: 1px solid #4a4a4a;
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .home-section {
+    background-size: cover;
+  }
+
+  img.logo {
+    margin: 100px 24px;
+  }
+
+  .home-section h1 {
+    font-size: 34px;
+    bottom: 18%;
+    left: auto;
+    right: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  img.logo {
+    margin: 100px 24px;
+    height: 70px;
+  }
+
+  .home-section {
+    height: 500px;
+  }
+
+  .home-section h1 {
+    font-size: 29px;
+    left: auto;
+    right: 40px;
+    line-height: 43px;
+  }
+
+  .about-section {
+    padding: 100px !important;
+  }
+
+  .about-content {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .about-section {
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 36px;
+  }
+
+  .section-heading {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    text-align: justify;
+  }
+
+  .features-section .features-caption {
+    right: auto;
+    left: auto;
+  }
+
+  .features-section .carousel-inner img {
+    height: 520px;
+  }
+
+  .slider-caption {
+    background: #fff;
+    opacity: 0.9;
+    color: #000;
+    width: 100%;
+    overflow-y: auto;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .clubhouse-banner .carousel-inner img {
+    height: 400px;
+  }
+
+  .address-section .col-md-8,
+  .address-section .col-md-4 {
+    width: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  footer .col-md-3,
+  footer .col-md-4,
+  footer .col-md-2 {
+    width: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 30px 10px;
+    padding-bottom: 0px;
+  }
+
+  .corporate-office {
+    padding-left: 15px !important;
+    padding: 20px 0px;
+    border-top: 1px solid #4a4a4a;
+  }
+
+  .the-corporate {
+    border-top: 1px solid #4a4a4a;
+    padding: 20px 15px;
+  }
+
+  .the-corporate h4 {
+    text-align: left;
+  }
+
+  .the-corporate p {
+    margin-bottom: 0px;
+  }
+
+  .links {
+    border-top: 1px solid #4a4a4a;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    padding-top: 20px;
+    border-top: 1px solid #4a4a4a;
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 2560px) {
+  .home-section h1 {
+    bottom: 20% !important;
+  }
+
+  .home-section .bg-video-wrap,
+  .home-section video {
+    min-height: auto;
+    height: auto;
+  }
+
+  .about-section,
+  .carousel-inner img {
+    height: 80vh;
+  }
+
+  .about-content {
+    top: 50%;
+    bottom: auto;
+  }
+}
+
+/* ============= zoom Css ============= */
+/*===========.magnifier {
+  overflow: hidden;
+  position: relative;
+}
+
+/* style for the DIV that is the magnifier lens */
+/*-------.maglens {
+  position: absolute;
+  overflow: hidden;
+  width: 10px;
+  height:10px;
+}
+
+/* style for the small IMG that appears on the page */
+/*.magsmall {
+  position: absolute; 
+  border-style: none
+}
+
+/* style for the magnified image, using a clip rectangle */
+/*.maglarge {
+  position: absolute; 
+  border-style: none
+}
+*/
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-container:hover .img-magnifier-glass {
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 10%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 250px;
+  height: 250px;
+  display:block;
+}
+.img-magnifier-glass {
+  display:none;
+}
